@@ -21,5 +21,5 @@ from comments import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("get_comments/", views.comments_list),
-    path('comment', views.add_comment, name='change_title'),
+    path('comment/', views.add_comment),
 ]
