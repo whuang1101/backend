@@ -6,3 +6,7 @@ class Comments(models.Model):
     date = models.DateTimeField(auto_now_add= True)
     def __str__(self) -> str:
         return self.text 
+class Title(models.Model):
+    text = models.CharField(max_length = 100)   
+    def __str__(self) -> str:
+        return self.text 
