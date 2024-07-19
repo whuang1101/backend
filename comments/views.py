@@ -1,6 +1,6 @@
 from django.http import JsonResponse
-from .models import Comments,Title
-from .serializers import CommentSerializer, TitleSerializer
+from .models import Comments
+from .serializers import CommentSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status

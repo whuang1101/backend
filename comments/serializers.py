@@ -1,10 +1,6 @@
 from rest_framework import serializers
-from .models import Comments, Title
+from .models import Comments
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comments
         fields =["id", "text","author","date"]
-class TitleSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Title
-        fields = ["id", "text"]
